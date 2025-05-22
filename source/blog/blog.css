@@ -1,0 +1,128 @@
+#blog-content, #blog-detail-content {
+    max-width: 900px;
+    margin: 60px auto 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    padding: 40px 28px 35px 28px;
+}
+
+#blog-content h1, #blog-detail-content h1 {
+    text-align: center;
+    font-size: 2.1em;
+    color: #2c3e50;
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+
+.blog-post {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+    padding: 30px 24px 22px 24px;
+    margin-bottom: 38px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.blog-post:hover {
+    box-shadow: 0 8px 24px rgba(192,135,172,0.15);
+    transform: translateY(-3px);
+}
+
+.blog-post h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.35em;
+    font-weight: 600;
+}
+.blog-post a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.blog-post a:hover {
+    color: #c087ac;
+}
+.blog-post p {
+    color: #555;
+    font-size: 1em;
+    margin: 0 0 15px 0;
+}
+.blog-post img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 15px 0 18px 0;
+    object-fit: cover;
+    max-height: 380px;
+}
+
+/* BLOG DETAIL */
+#blog-detail-content h2 {
+    color: #c087ac;
+    font-size: 1.18em;
+    margin: 22px 0 10px 0;
+    font-weight: 600;
+}
+
+#blog-detail-content ul {
+    padding-left: 20px;
+    margin-bottom: 18px;
+    color: #444;
+}
+#blog-detail-content li {
+    margin-bottom: 6px;
+    font-size: 1em;
+}
+
+#blog-detail-content p, #blog-detail-content ul {
+    color: #333;
+    font-size: 1.07em;
+    line-height: 1.7;
+}
+
+#blog-detail-content blockquote {
+    margin: 22px 0;
+    padding: 18px;
+    background: #f8f6fa;
+    border-left: 4px solid #c087ac;
+    color: #a875ab;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+#blog-detail-content img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 20px 0;
+    object-fit: cover;
+    max-height: 420px;
+}
+
+#blog-detail-content a {
+    color: #c087ac;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+#blog-detail-content a:hover {
+    color: #a864a2;
+}
+
+@media (max-width: 600px) {
+    #blog-content, #blog-detail-content {
+        padding: 18px 6vw 20px 6vw;
+        margin-top: 28px;
+    }
+    .blog-post {
+        padding: 16px 5vw 16px 5vw;
+    }
+    #blog-content h1, #blog-detail-content h1 {
+        font-size: 1.3em;
+        margin-bottom: 24px;
+    }
+}
+#wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#footer {
+    margin-top: auto;
+}
